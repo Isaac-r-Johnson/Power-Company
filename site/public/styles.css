@@ -1,3 +1,177 @@
-h1{
-    color: blue;
+/* System */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1B1D24;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Header */
+.header-main{
+    width: 100vw;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo{
+    position: relative;
+    height: 120px;
+    margin-left: 5px;
+    z-index: 10;
+}
+
+.navBar{
+    display: flex;
+    z-index: 10;
+}
+
+.navBar > h2{
+    color: white;
+    margin: 0px 15px 0px 15px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 200;
+    font-size: 1.4em;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navBar > h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.selected{
+    text-decoration: underline;
+}
+
+/* Home Page */
+.home-main{
+    background-color: #1B1D24;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1d24ab;
+    padding-bottom: 150px;
+}
+
+.heading-text{
+    text-align: center;
+    color: white;
+}
+
+.heading-text > h1{
+    font-size: 6em;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.special-font{
+    font-family: "Stick No Bills", sans-serif!important;
+    font-weight: 800!important;
+    font-size: 7.6em!important;
+    margin-top: -25px;
+}
+
+.home-content > h4{
+    color: white;
+    text-align: center;
+    width: 500px;
+    font-size: 1.8em;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 1000px){
+    .heading-text > h1{
+        font-size: 4em;
+    }
+    .special-font{
+        font-size: 5.4em!important;
+    }
+    .home-content > h4{
+        font-size: 1.3em;
+        width: 400px;
+    }
+}
+@media (max-width: 900px){
+    .home-content{
+        padding-bottom: 50px;
+    }
+}
+
+
+/* Footer */
+.footer-main{
+    position: relative;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #1B1D24;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    color: white;
+    font-family: "Public Sans", sans-serif;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.social-icons > a{
+    color: white;
+}
+
+.footer-copyright{
+    width: 100vw;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-copyright > h5{
+    color: white;
+    font-family: "Public Sans", sans-serif;
 }
