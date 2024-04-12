@@ -1,29 +1,43 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import BG from './images/background.jpg'
+import Home from './pages/Home';
+import Mission from './pages/Mission';
+import Reach from './pages/Reach';
+import Volunteer from './pages/Volunteer';
+import NotFound from './pages/NotFound';
+
 
 const App = () => {
+
+    const pages = ["", "mission", "reach", "volunteer"];
+    const page = window.location.href.split('/')[3];
+    var isFound = false;
+
+    pages.forEach((thePage) => {
+        if (page === thePage){
+            isFound = true;
+        }
+    });
+
     return (
-        <div className='home-main'>
-            <Header/>
+        <Router>
+            <Header page={page}/>
 
-
-                <div className='image' style={{backgroundImage: `url('${BG}')`}}>
-                    <div className='home-content'>
-                        <div className='heading-text'>
-                            <h1>Welcome to</h1>
-                            <h1 className='special-font'>Power Company!</h1>
-                        </div>
-                        <h4>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </h4>
-                    </div>
-                </div>
-
+            {isFound ? (
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/mission' element={<Mission/>}/>
+                    <Route path='/reach' element={<Reach/>}/>
+                    <Route path='/volunteer' element={<Volunteer/>}/>
+                </Routes>
+            ):(
+                <NotFound/>
+            )}
 
             <Footer/>
-        </div>
+        </Router>
     );
 }
 

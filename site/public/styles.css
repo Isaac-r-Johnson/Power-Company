@@ -53,10 +53,6 @@ body{
     cursor: pointer;
 }
 
-.selected{
-    text-decoration: underline;
-}
-
 /* Home Page */
 .home-main{
     background-color: #1B1D24;
@@ -113,7 +109,7 @@ body{
     font-style: normal;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1300px){
     .heading-text > h1{
         font-size: 4em;
     }
@@ -131,6 +127,118 @@ body{
     }
 }
 
+/* Mission */
+
+.mission-main{
+    background-color: #1B1D24;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.left{
+    height: 100vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 75px;
+}
+
+.left > h1{
+    color: white;
+    font-size: 3em;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list{
+    margin-top: 10px;
+    width: 62%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.list-text{
+    margin-left: 15px;
+}
+
+.list-text > h2{
+    font-family: "Stick No Bills", sans-serif!important;
+    color: white;
+    font-size: 2.3em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.list-text > h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+
+.right{
+    height: 100vh;
+    width: 45vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle{
+    background-color: white;
+    width: 200%;
+    height: 150%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mission-image{
+    width: 98%;
+    height: 98%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (min-width: 1750px){
+    .left > h1{
+        font-size: 5em;
+    }
+    .icon{
+        width: 150px;
+        height: 150px;
+    }
+    .list-text > h2{
+        font-size: 4em;
+    }
+    .list-text > h5{
+        font-size: 1.5em;
+    }
+}
+
 
 /* Footer */
 .footer-main{
@@ -140,6 +248,7 @@ body{
     bottom: 0;
     width: 100vw;
     background-color: #1B1D24;
+    border-top: 1px solid white;
 }
 
 .footer-social{
