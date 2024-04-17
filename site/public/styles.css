@@ -239,6 +239,142 @@ body{
     }
 }
 
+/* Reach Out Page */
+
+.reach-main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.reach-container{
+    margin-top: 1%;
+    width: 80%;
+    height: 85%;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+}
+
+.r-left{
+    width: 50%;
+    height: 100%;
+}
+
+.l-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l-text > h2{
+    color: white;
+    font-size: 2em;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.l-text h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.l-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.input > h5{
+    font-family: sans-serif;
+    color: white;
+    font-size: .9em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0px 0px 6px 0px;
+    width: 74%;
+}
+
+.input > input{
+    width: 75%;
+    height: 30px;
+    background-color: #1B1D24;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: white;
+    font-size: .9em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 0px 5px 0px 5px;
+}
+
+.input > textarea{
+    width: 75%;
+    height: 100px;
+    background-color: #1B1D24;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: white;
+    font-size: .9em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.send-btn{
+    width: 75%;
+    height: 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: black;
+    font-size: .8em;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.send-btn:hover{
+    cursor: pointer;
+    background-color: rgb(225, 225, 225);
+}
+.send-btn:active{
+    background-color: rgb(120, 120, 120);
+}
+
+@media (min-width: 1350px) {
+    .input > input{
+        height: 40px;
+        font-size: 1em;
+    }
+    .input > textarea{
+        height: 200px;
+        font-size: 1em;
+    }
+}
+
+.r-right{
+    width: 50%;
+    height: 100%;
+}
+
 
 /* Footer */
 .footer-main{

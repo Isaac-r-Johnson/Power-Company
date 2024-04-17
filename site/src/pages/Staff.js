@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Volunteer = () => {
+const Staff = () => {
     return (
         <div className=''>
             
@@ -8,4 +8,4 @@ const Volunteer = () => {
     );
 }
 
-export default Volunteer;
+export default Staff;

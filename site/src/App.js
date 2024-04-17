@@ -5,13 +5,13 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Mission from './pages/Mission';
 import Reach from './pages/Reach';
-import Volunteer from './pages/Volunteer';
+import Staff from './pages/Staff';
 import NotFound from './pages/NotFound';
 
 
 const App = () => {
 
-    const pages = ["", "mission", "reach", "volunteer"];
+    const pages = ["", "mission", "reach", "staff"];
     const page = window.location.href.split('/')[3];
     var isFound = false;
 
@@ -30,7 +30,7 @@ const App = () => {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/mission' element={<Mission/>}/>
                     <Route path='/reach' element={<Reach/>}/>
-                    <Route path='/volunteer' element={<Volunteer/>}/>
+                    <Route path='/staff' element={<Staff/>}/>
                 </Routes>
             ):(
                 <NotFound/>

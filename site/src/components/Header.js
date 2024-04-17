@@ -8,7 +8,7 @@ const Header = (props) => {
         home: {},
         mission: {},
         reach: {},
-        volunteer: {}
+        staff: {}
     }
     if (page === ""){
         pageStyling.home = theStyle;
@@ -19,8 +19,8 @@ const Header = (props) => {
     else if (page === "reach"){
         pageStyling.reach = theStyle;
     }
-    else if (page === "volunteer"){
-        pageStyling.volunteer = theStyle;
+    else if (page === "staff"){
+        pageStyling.staff = theStyle;
     }
     else{
         console.log("Error!");
@@ -33,7 +33,7 @@ const Header = (props) => {
                 <h2 style={pageStyling.home}><a href="/">Home</a></h2>
                 <h2 style={pageStyling.mission}><a href="/mission">Our Mission</a></h2>
                 <h2 style={pageStyling.reach}><a href="/reach">Reach Out</a></h2>
-                <h2 style={pageStyling.volunteer}><a href="/volunteer">Volunteer</a></h2>
+                <h2 style={pageStyling.volunteer}><a href="/staff">Staff</a></h2>
             </div>
         </div>
     );
