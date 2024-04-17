@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../images/temp.jpg';
+import image from '../images/jeremy.jpg';
 import missionIcon from '../images/mission.png';
 import visionIcon from '../images/vision.png';
 import goalsIcon from '../images/goals.png';
